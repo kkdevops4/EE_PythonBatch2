@@ -1,0 +1,16 @@
+[
+    {
+        "id": "123",
+        "title": "boss",
+        "author": "sai",
+        "genre": "si-fi",
+        "copies": 23
+    },
+    {
+        "id": "1",
+        "title": "saitheboss",
+        "author": "sai vaeshith",
+        "genre": "action",
+        "copies": 2
+    }
+]
