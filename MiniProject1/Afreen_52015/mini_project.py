@@ -9,18 +9,29 @@ def ask_question(question, options, correct_answer):
     if answer == correct_answer:
         return True
     else:
+        print("Wrong Answer!")
+        print("Correct Answer is:", correct_answer)
         return False
 
 
 def show_scorecard(score, correct, total):
+    wrong = total - correct
+
     print("\n===== SCORECARD =====")
     print("Total Questions :", total)
     print("Correct Answers :", correct)
-    print("Wrong Answers :", total - correct)
-    print("Final Score :", score)
+    print("Wrong Answers   :", wrong)
+    print("Final Score     :", score)
 
     percentage = (correct / total) * 100
-    print("Percentage :", percentage, "%")
+    print("Percentage      :", percentage, "%")
+
+    if correct > wrong:
+        print("\nWell Done! You have a good understanding of Python concepts.")
+    elif correct == wrong:
+        print("\nGood Effort! Keep learning and improving.")
+    else:
+        print("\nKeep Practicing! You can do even better next time.")
 
 
 questions = [
@@ -77,7 +88,6 @@ for question in questions:
             score += 5
             streak = 0
     else:
-        print("Wrong Answer!")
         streak = 0
 
 show_scorecard(score, correct_answers, len(questions))
