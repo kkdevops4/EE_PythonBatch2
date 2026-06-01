@@ -30,7 +30,7 @@ print("---------------------------------------")
 
 base_price=0
 crust_name=""
-size=int(input("Please choose th size of your pizza\n 1.Small\n2.medium\n3.large\n"))
+size=int(input("Please choose th size of your pizza\n 1.Small(Rs.150)\n2.medium(Rs.250)\n3.large(Rs.350)\n"))
 if size==1:
     base_price=150
     size_name="Small"
@@ -49,14 +49,14 @@ else:
 
 
 
-crust=int(input("Enter the crust option for your pizza\n1.Hand-tossed\n2.Stuffed crust\n3.Flatbread\n"))
+crust=int(input("Enter the crust option for your pizza\n1.Hand-tossed(Rs.0)\n2.Stuffed crust(Rs.50)\n3.Flatbread(Rs.30)\n"))
 if crust==1:
     crust_name="Hand-tossed"
 elif crust==2:
     crust_name="Stuffed crust"
     base_price=base_price+50
 elif crust==3:
-    crust="Flatbread"
+    crust_name="Flatbread"
     base_price=base_price+30
 else:
     crust_name="Hand-tossed"
@@ -112,3 +112,4 @@ print("-------------------------------------------------------")
 print(f"TOTAL BILL:                   {final_bill}")
 print("------------------------------------------------------")
 print("Thank you for ordering !!!")
+
