@@ -1,87 +1,83 @@
-questions = [
-    {
-        "question": "Which keyword is used to create a function in Python?",
-        "options": ("A. func", "B. def", "C. function", "D. define"),
-        "answer": "B",
-        "topic": "Functions"
-    },
-    {
-        "question": "Which data type stores multiple values in square brackets []?",
-        "options": ("A. Tuple", "B. Set", "C. List", "D. Dictionary"),
-        "answer": "C",
-        "topic": "Lists"
-    },
-    {
-        "question": "Which loop is used to iterate over a sequence?",
-        "options": ("A. if", "B. while", "C. switch", "D. for"),
-        "answer": "D",
-        "topic": "Loops"
-    },
-    {
-        "question": "What is the output of 10 // 3?",
-        "options": ("A. 3", "B. 3.33", "C. 4", "D. 1"),
-        "answer": "A",
-        "topic": "Operators"
-    },
-    {
-        "question": "Which data structure stores key-value pairs?",
-        "options": ("A. List", "B. Tuple", "C. Dictionary", "D. Set"),
-        "answer": "C",
-        "topic": "Dictionary"
-    }
-]
+def ask_question(question, options, correct_answer):
+    print("\n" + question)
 
-def ask_question(question):
-    print("\n" + question["question"])
-
-    for option in question["options"]:
+    for option in options:
         print(option)
 
     answer = input("Enter your answer (A/B/C/D): ").upper()
-    return answer
 
-def show_scorecard(results, score, topics):
+    if answer == correct_answer:
+        return True
+    else:
+        return False
+
+
+def show_scorecard(score, correct, total):
     print("\n===== SCORECARD =====")
+    print("Total Questions :", total)
+    print("Correct Answers :", correct)
+    print("Wrong Answers :", total - correct)
+    print("Final Score :", score)
 
-    for i in range(len(results)):
-        print("Question", i + 1, ":", results[i])
+    percentage = (correct / total) * 100
+    print("Percentage :", percentage, "%")
 
-    print("\nTopics Covered:")
-    for topic in topics:
-        print(topic)
 
-    print("\nFinal Score =", score)
+questions = [
+    ["Which datatype stores decimal numbers?",
+     ["A. int", "B. float", "C. str", "D. bool"],
+     "B"],
+
+    ["Which operator is used for exponentiation?",
+     ["A. *", "B. //", "C. **", "D. %"],
+     "C"],
+
+    ["Which keyword is used for decision making?",
+     ["A. for", "B. if", "C. while", "D. break"],
+     "B"],
+
+    ["Which loop is used to iterate over a sequence?",
+     ["A. if", "B. else", "C. for", "D. pass"],
+     "C"],
+
+    ["Which method converts a string to uppercase?",
+     ["A. upper()", "B. lower()", "C. split()", "D. replace()"],
+     "A"],
+
+    ["Which data structure is mutable?",
+     ["A. Tuple", "B. List", "C. String", "D. Integer"],
+     "B"],
+
+    ["Which data structure stores key-value pairs?",
+     ["A. Set", "B. List", "C. Dictionary", "D. Tuple"],
+     "C"],
+
+    ["Which keyword is used to create a function?",
+     ["A. function", "B. define", "C. fun", "D. def"],
+     "D"]
+]
 
 score = 0
 streak = 0
-
-results = []
-
-topics_attempted = set()
+correct_answers = 0
 
 print("===== PYTHON QUIZ APP =====")
 
 for question in questions:
+    result = ask_question(question[0], question[1], question[2])
 
-    user_answer = ask_question(question)
-
-    topics_attempted.add(question["topic"])
-
-    if user_answer == question["answer"]:
-        print("Correct!")
-
+    if result:
+        print("Correct Answer!")
         score += 10
+        correct_answers += 1
         streak += 1
 
-        if streak >= 3:
-            print("Streak Bonus +5")
+        if streak == 3:
+            print("Bonus! +5 points for 3 correct answers in a row")
             score += 5
-
-        results.append("Correct")
-
+            streak = 0
     else:
-        print("Wrong!")
+        print("Wrong Answer!")
         streak = 0
-        results.append("Wrong")
 
-show_scorecard(results, score, topics_attempted)
+show_scorecard(score, correct_answers, len(questions))
