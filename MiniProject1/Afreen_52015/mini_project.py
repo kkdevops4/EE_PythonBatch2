@@ -1,7 +1,7 @@
 questions = [
     {
         "question": "Which keyword is used to create a function in Python?",
-        "options": ("A. func", "B. def", "C. function", "D. define"), # Tuple
+        "options": ("A. func", "B. def", "C. function", "D. define"),
         "answer": "B",
         "topic": "Functions"
     },
