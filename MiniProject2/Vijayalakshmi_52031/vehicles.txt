@@ -1,0 +1,10 @@
+Car,Toyota,Camry,2022,4
+Car,Honda,Civic,2021,4
+Car,Hyundai,Verna,2023,4
+Car,Tata,Nexon,2024,5
+Car,Maruti,Baleno,2022,5
+Bike,Yamaha,R15,2023,Sports
+Bike,Bajaj,Pulsar220,2022,Sports
+Bike,RoyalEnfield,Classic350,2024,Cruiser
+Bike,TVS,ApacheRTR160,2023,Sports
+Bike,Honda,Activa6G,2024,Scooter
