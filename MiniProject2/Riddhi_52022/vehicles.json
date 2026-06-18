@@ -1,0 +1,30 @@
+{
+    "MB8EN11ADT8A90831": {
+        "vin": "MB8EN11ADT8A90831",
+        "company": "Suzuki",
+        "model": "Access125",
+        "year": "2026",
+        "color": "pink"
+    },
+    "1HGCM82633A123456": {
+        "vin": "1HGCM82633A123456",
+        "company": "Honda",
+        "model": "City",
+        "year": "2022",
+        "color": "White"
+    },
+    "JHMCM56557C404453": {
+        "vin": "JHMCM56557C404453",
+        "company": "Toyota",
+        "model": "Hyryder",
+        "year": "2023",
+        "color": "Black"
+    },
+    "ERDFT1234GHYTF786": {
+        "vin": "ERDFT1234GHYTF786",
+        "company": "Skoda",
+        "model": "Kylaq",
+        "year": "2024",
+        "color": "Cyan"
+    }
+}
