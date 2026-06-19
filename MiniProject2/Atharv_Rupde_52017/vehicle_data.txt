@@ -1,0 +1,6 @@
+# vehicle_id  distance_km  time_minutes  odometer_km  fuel_litres
+1 120 90 15032 8
+2 200 150 22045 18
+3 80 60 11000 12
+4 150 100 30500 40
+5 60 50 9000 5
