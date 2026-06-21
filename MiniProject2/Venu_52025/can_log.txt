@@ -1,0 +1,6 @@
+VALID MESSAGE
+INVALID MESSAGE : Invalid Payload Format
+INVALID MESSAGE : Invalid Payload Format
+CAN_ID=0X1A3  DLC=3  PAYLOAD=CC BB VV  --> INVALID - Invalid Payload: 'VV' is not a hex value
+CAN_ID=0X3B1  DLC=3  PAYLOAD=AA FF GG  --> INVALID - Invalid Payload: 'GG' is not a hex value
+CAN_ID=0X1A2  DLC=3  PAYLOAD=AA BB CC  --> VALID MESSAGE
