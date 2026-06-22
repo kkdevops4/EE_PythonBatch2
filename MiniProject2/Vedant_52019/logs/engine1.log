@@ -1,0 +1,9 @@
+[2026-06-10 10:15:20] INFO ECU Started
+
+[2026-06-10 10:16:00] WARNING Fuel Pressure Low
+Source: FuelSystem
+
+[2026-06-10 10:17:30] ERROR Temperature Sensor Failed
+Source: TempSensor
+
+[2026-06-10 10:18:00] INFO Normal Operation
