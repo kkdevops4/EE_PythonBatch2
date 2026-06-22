@@ -1,0 +1,9 @@
+{
+    "vehicle": "CAR1",
+    "tyres": {
+        "front_left": 27,
+        "front_right": 15,
+        "rear_left": 34,
+        "rear_right": 73
+    }
+}
