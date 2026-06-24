@@ -1,0 +1,8 @@
+Model=BMW X5
+BasePrice=50000
+Sunroof=1200
+Navigation=800
+LeatherSeats=1500
+HeatedSeats=700
+ParkingSensors=600
+PremiumSound=1000
