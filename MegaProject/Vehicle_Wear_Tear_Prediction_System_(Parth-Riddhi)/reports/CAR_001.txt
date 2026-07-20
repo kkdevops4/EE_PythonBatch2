@@ -1,0 +1,13 @@
+==================================================
+        VEHICLE WEAR & TEAR REPORT
+==================================================
+
+Vehicle ID       : CAR_001
+
+Status           : GREEN
+
+Alert            : Vehicle Healthy
+
+Recommendation   : No Maintenance Required
+
+==================================================

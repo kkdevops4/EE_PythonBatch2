@@ -1,0 +1,13 @@
+==================================================
+        VEHICLE WEAR & TEAR REPORT
+==================================================
+
+Vehicle ID       : CAR_006
+
+Status           : RED
+
+Alert            : Immediate Service Required
+
+Recommendation   : Immediate Vehicle Inspection Required
+
+==================================================
