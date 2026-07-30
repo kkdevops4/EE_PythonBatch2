@@ -1,0 +1,57 @@
+
+        ----------------------------------
+        [Tyre REPORT]
+        
+
+        Tyre : rear_right
+        Severity : High
+        
+
+        Action : Replace tyre
+        Priority : URGENT
+
+        ----------------------------------
+
+        
+        ----------------------------------
+        [Tyre REPORT]
+        
+
+        Tyre : front_left
+        Severity : High
+        
+
+        Action : Replace tyre
+        Priority : URGENT
+
+        ----------------------------------
+
+        
+        ----------------------------------
+        [Tyre REPORT]
+        
+
+        Tyre : front_right
+        Severity : Medium
+        
+
+        Action : Inspect tyre soon
+        Priority : WARNING
+
+        ----------------------------------
+
+        
+        ----------------------------------
+        [Tyre REPORT]
+        
+
+        Tyre : rear_left
+        Severity : Medium
+        
+
+        Action : Inspect tyre soon
+        Priority : WARNING
+
+        ----------------------------------
+
+        

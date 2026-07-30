@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+{
+    "vehicle": "CAR1",
+    "tyres": {
+        "front_left": 80,
+        "front_right": 50,
+        "rear_left": 45,
+        "rear_right": 83
+    }
+}
+
+
+
+
