@@ -26,6 +26,48 @@ The project demonstrates real-world automotive data analysis techniques and prov
 
 ---
 
+# 🎬 Live Project Demonstration
+
+The following GIF demonstrates the complete execution flow of the application.
+
+- Loading Dataset
+- Processing Vehicle Data
+- Comparing Threshold Values
+- Predicting Wear & Tear
+- Generating Recommendations
+- Creating Pie Chart
+- Generating PDF Report
+
+![Live Demo](media/demo.gif)
+
+---
+
+# 📄 Generated Vehicle Report
+
+After completing the analysis, the application automatically generates a PDF report containing:
+
+- Vehicle Information
+- Sensor Analysis
+- Wear Prediction
+- Alert Status
+- Maintenance Recommendation
+
+The application automatically generates graphical visualization for easier understanding of vehicle health.
+
+![Final Output](media/output_2.png)
+
+---
+
+# 📊 Dataset Used
+
+The application uses an Excel dataset containing operational vehicle parameters for analysis.
+
+### Dataset Preview
+
+![Dataset](media/dataset_preview.png)
+
+---
+
 ## 🎯 Objectives
 
 - Analyze vehicle operational data.
@@ -54,43 +96,54 @@ The project demonstrates real-world automotive data analysis techniques and prov
 
 ## 🛠 Technologies Used
 
-- Python 3
-- Pandas
-- Matplotlib
-- OpenPyXL
-- ReportLab
-- File Handling
-- Modular Programming
-- Data Analysis
-- Data Visualization
+| Technology | Purpose |
+|------------|----------|
+| Python | Programming Language |
+| Pandas | Data Processing |
+| OpenPyXL | Excel Handling |
+| Matplotlib | Data Visualization |
+| ReportLab | PDF Report Generation |
+| File Handling | Data Storage |
 
 ---
 
 ## 📂 Project Structure
 
 ```text
+
 52030_52022_VehicleWearPredictor
-│
-├── main.py
-├── README.md
+
 │
 ├── dataset
-│   └── Standard_Vehicle_Data.xlsx
+│      └── Standard_Vehicle_Data.xlsx
 │
 ├── modules
-│   ├── data_loader.py
-│   ├── threshold_processor.py
-│   ├── comparator.py
-│   ├── alert_engine.py
-│   ├── recommendation.py
-│   ├── visualization.py
-│   └── report_generator.py
+│      ├── data_loader.py
+│      ├── comparator.py
+│      ├── threshold_processor.py
+│      ├── recommendation.py
+│      ├── alert_engine.py
+│      ├── report_generator.py
+│      └── visualization.py
 │
 ├── graphs
-│   └── pie_chart.png
+│      └── pie_chart.png
 │
-└── reports
-    └── Vehicle_Report.pdf
+├── reports
+│      └── MH12AB1203.pdf
+│
+├── media
+│      ├── workflow.png
+│      ├── demo.gif
+│      ├── dataset.png
+│      ├── report.png
+│      ├── output1.png
+│      └── output2.png
+│
+├── main.py
+│
+└── README.md
+
 ```
 
 ---
@@ -98,42 +151,98 @@ The project demonstrates real-world automotive data analysis techniques and prov
 ## 🔄 Project Workflow
 
 ```
-Load Vehicle Dataset
-          │
-          ▼
-Process Vehicle Parameters
-          │
-          ▼
-Compare With Threshold Values
-          │
-          ▼
-Predict Wear & Tear Condition
-          │
-          ▼
-Generate Alerts
-          │
-          ▼
-Recommend Vehicle Service
-          │
-          ▼
-Generate Charts
-          │
-          ▼
-Create PDF Report
+The following workflow illustrates the complete execution flow of the application.
+
+                 🚗 Vehicle Wear & Tear Prediction System
+
+                             ┌───────────────┐
+                             │  Start System │
+                             └───────┬───────┘
+                                     │
+                                     ▼
+                      ┌───────────────────────────┐
+                      │ Load Vehicle Dataset      │
+                      │ (Excel File)              │
+                      └─────────────┬─────────────┘
+                                    │
+                                    ▼
+                    ┌─────────────────────────────┐
+                    │ Read Vehicle Sensor Values  │
+                    │ (Engine, Brake, Tyre etc.)  │
+                    └─────────────┬───────────────┘
+                                  │
+                                  ▼
+                  ┌────────────────────────────────┐
+                  │ Compare with Standard Threshold│
+                  └──────────────┬─────────────────┘
+                                 │
+                                 ▼
+                  ┌────────────────────────────────┐
+                  │ Calculate Wear & Health Status │
+                  └──────────────┬─────────────────┘
+                                 │
+               ┌─────────────────┴─────────────────┐
+               │                                   │
+               ▼                                   ▼
+      Healthy Vehicle                      Fault Detected
+               │                                   │
+               ▼                                   ▼
+     No Service Required              Generate Alerts &
+                                      Maintenance Advice
+               │                                   │
+               └──────────────┬────────────────────┘
+                              ▼
+               ┌────────────────────────────┐
+               │ Generate Charts            │
+               │ (Pie / Bar Graph)          │
+               └─────────────┬──────────────┘
+                             ▼
+               ┌────────────────────────────┐
+               │ Generate PDF Report        │
+               └─────────────┬──────────────┘
+                             ▼
+                    ┌──────────────────┐
+                    │      End         │
+                    └──────────────────┘
 ```
 
 ---
 
-## ▶️ How to Run
+# ▶️ How to Run the Project
 
-1. Open the project folder.
-2. Install the required Python libraries.
+## Step 1
+
+Clone the repository.
+
+```bash
+git clone <https://gitlab.edag.de/kk99314/pythonbatch2projects.git>
+```
+
+---
+
+## Step 2
+
+Navigate to the project folder.
+
+```bash
+cd Vehicle Wear & Tear Prediction System
+```
+
+---
+
+## Step 3
+
+Install required libraries.
 
 ```bash
 pip install pandas matplotlib openpyxl reportlab
 ```
 
-3. Run the project.
+---
+
+## Step 4
+
+Run the application.
 
 ```bash
 python main.py
@@ -147,16 +256,17 @@ python main.py
 
 ---
 
-## 📄 Output
+##  📌 Expected Output
 
-The application generates:
+The application will automatically:
 
-- Vehicle Health Analysis
-- Component Wear Prediction
-- Service Recommendations
-- Alert Notifications
-- Pie Chart Visualization
-- PDF Vehicle Report
+- Load Vehicle Dataset
+- Analyze Sensor Data
+- Predict Wear & Tear
+- Generate Alerts
+- Recommend Maintenance
+- Create Pie Chart
+- Generate PDF Report
 
 ---
 
@@ -180,6 +290,12 @@ The application generates:
 - Data analysis and visualization
 - Automated report generation
 - Real-world vehicle health monitoring workflow
+
+---
+
+# 🙏 Acknowledgement
+
+This project was developed as part of the **Python Mega Project** during the **EDAG Python Training Program** to demonstrate practical implementation of Python programming, modular application development, data analysis, visualization, and automated report generation.
 
 ---
 
